@@ -10,7 +10,7 @@ if (hours <= 40) {
     `Your pay checks is: ${pay}. It will take ${weeks} weeks to make $1,000,000`
   );
 } else {
-  const pay = wage * 40 + (hours - 40) * (wage * 1.5);
+  const pay = (wage * 40) + ((wage * 1.5) * (hours - 40));
   const weeks = Math.floor(1000000 / pay);
   console.log(
     `Your pay checks is: ${pay} It will take ${weeks} weeks to make $1,000,000`
